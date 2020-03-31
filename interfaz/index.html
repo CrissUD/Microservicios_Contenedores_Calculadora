@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styles/estilos.css">
+        <script src="scripts/script.js" text="text/javascript"></script>
+    </head>
+    <body class="body">        
+        <div class="conent">
+            <div class="display">
+                <div>
+                    <p class="texto_arriba" id="texto_arriba"></p>
+                </div>
+                <div>
+                    <h3 class="texto" id="operacion"></h3>
+                    <p class="texto" id="display"></p>
+                </div>
+            </div>
+            <div class="numeros_panel">
+                <div class="numeros">
+                    <input class="numero" type="button" value="7" onclick="digitarNumero('7')"/>
+                    <input class="numero" type="button" value="8" onclick="digitarNumero('8')"/>
+                    <input class="numero" type="button" value="9" onclick="digitarNumero('9')"/>
+                    <input class="operacion" type="button" value="+" onclick="sumar()"/>
+                </div>
+                <div class="numeros">        
+                    <input class="numero" type="button" value="4" onclick="digitarNumero('4')"/>
+                    <input class="numero" type="button" value="5" onclick="digitarNumero('5')"/>
+                    <input class="numero" type="button" value="6" onclick="digitarNumero('6')"/>
+                    <input class="operacion" type="button" value="-" onclick="restar()"/>
+                </div>
+                <div class="numeros">
+                    <input class="numero" type="button" value="1" onclick="digitarNumero('1')"/>
+                    <input class="numero" type="button" value="2" onclick="digitarNumero('2')"/>
+                    <input class="numero" type="button" value="3" onclick="digitarNumero('3')"/>
+                    <input class="operacion" type="button" value="x" onclick="multiplicar()"/>
+                </div>
+                <div class="numeros">
+                    <input class="numero" type="button" value="0" onclick="digitarNumero('0')"/>
+                    <input class="numero" type="button" value="<--" onclick="borrar()">
+                    <input class="numero" type="button" value="AC" onclick="borrarTodo()"/>
+                    <input class="operacion" type="button" value="/" onclick="dividir()"/>
+                </div>
+                <div class="resultado">
+                    <input class="igual" type="button" value="=" onclick="obtenerResultado()"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
