@@ -41,6 +41,9 @@ Aplicativo web de calculadora usando Flask, Flask-cors y liver-server en un ento
 Para realizar la aplicacion lo primero a realizar son las funciones de suma, resta, multiplicacion y division ubicados en las carpetas con sus respectivos nombres en su archivo ".py" por ejemplo suma/suma.py. En estos archivos se definira el servicio empezando por importar la libreria de flask y flask_cors, seguidamente se dara la ruta de la aplicacion y el metodo http a ser usado en este caso POST con la ruta '/api/suma, segudiamente el metodo que sera usado en esta ruta en donde pondremos la logica de una suma, obteniendo los parametros mediante un JSON enviado desde la interfaz.
 
 Para conectar todos los servicios creados sera necesario usar una vista la cual es el index.html, en el cual unicamente se definen los botones y vista de la calculadora, este importa el "script.js" el cual es el encargado de conectar la interfaz con la logica propuesta en los servicios de flask. 
+Seguidamente con ayuda de liveserver, se monta la app al servidor y se abre el archivo index.html para correrlo.
+Ademas el proyecto fue dockerizado, para observar los detalles y configuracion se pueden ver los archivos de configuracion del docker ubicados en cada una de las carpetas de los servicios llamados DockerFile, el cual depende de requerimientos.txt donde se encuentran los requerimientos necesarios para la ejecucion de este servicio, en este caso flask y flask-cors.
+Para la composicion del proyecto, usando docker se siguen las siguientes instrucciones:
 
 1. ejecutar docker-compose build
 2. ejecutar docker-compose up
