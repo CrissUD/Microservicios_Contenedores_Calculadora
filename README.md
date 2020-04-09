@@ -38,6 +38,9 @@ Docker es un proyecto de código abierto el cual se usa para automatizar la impl
 ## Solución 
 
 Aplicativo web de calculadora usando Flask, Flask-cors y liver-server en un entorno dockerizado
+Para realizar la aplicacion lo primero a realizar son las funciones de suma, resta, multiplicacion y division ubicados en las carpetas con sus respectivos nombres en su archivo ".py" por ejemplo suma/suma.py. En estos archivos se definira el servicio empezando por importar la libreria de flask y flask_cors, seguidamente se dara la ruta de la aplicacion y el metodo http a ser usado en este caso POST con la ruta '/api/suma, segudiamente el metodo que sera usado en esta ruta en donde pondremos la logica de una suma, obteniendo los parametros mediante un JSON enviado desde la interfaz.
+
+Para conectar todos los servicios creados sera necesario usar una vista la cual es el index.html, en el cual unicamente se definen los botones y vista de la calculadora, este importa el "script.js" el cual es el encargado de conectar la interfaz con la logica propuesta en los servicios de flask. 
 
 1. ejecutar docker-compose build
 2. ejecutar docker-compose up
