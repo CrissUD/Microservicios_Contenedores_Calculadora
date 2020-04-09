@@ -21,8 +21,20 @@ En el repositorio se deben exponer las tecnologías seleccionadas para ofrecer l
 
 La explicación de despliegue así como la explicación de las herramientas seleccionadas debe ser clara en el README del proyecto.
 ## tecnologias usadas
-#Flask
-
+### Flask
+Flask es un “micro” Framework escrito en Python y concebido para facilitar el desarrollo de Aplicaciones Web bajo el patrón MVC.
+* Flask puede ser muy conveniente, para determinadas aplicaciones no se necesitan muchas extensiones y es suficiente.
+* No se necesita una infraestructura con un servidor web para probar las aplicaciones sino de una manera sencilla se puede correr un servidor web para ir viendo los resultados que se van obteniendo.
+* Es compatible con python 3
+* Permite el uso de sesiones
+* Es Open source
+#### Flask-cors
+Es una extensión de Flask para manejar (CORS) Cross Origin Resource Sharing , haciendo posible AJAX de origen cruzado.
+habilita el soporte de CORS en todas las rutas, para todos los orígenes y métodos. Permite la parametrización de todos los encabezados CORS en un nivel por recurso. El paquete también contiene un decorador, para aquellos que prefieren este enfoque.
+### live-server
+Es una extension de VSCode la cual monta un pequeño servidor local en donde cualquier cambio que hagamos en el editor, se verá reflejado instantáneamente en el navegador.
+### Docker
+Docker es un proyecto de código abierto el cual se usa para automatizar la implementación de aplicaciones como contenedores portátiles y autosuficientes que se pueden ejecutar en la nube o localmente. Docker  también una empresa que promueve e impulsa esta tecnología, en colaboración con proveedores de la nube, Linux y Windows, incluido Microsoft.
 ## Solución 
 
 Aplicativo web de calculadora usando Flask, Flask-cors y liver-server en un entorno dockerizado
