@@ -108,10 +108,10 @@ python 3.76
 $ pip install flask
 ```
 
-- Instalar Flask Core a la maquina
+- Instalar Flask Cors a la maquina
 
 ```sh
-$ pip install flask-core
+$ pip install flask-cors
 ```
 
 - Instalar Live Server, este puede ser instalado desde una extension para Visual Studio Code.
