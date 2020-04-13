@@ -1,8 +1,3 @@
-"""
-Created on Mon Sep  9 15:07:08 2019
-
-@author: santoyo-yo
-"""
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
