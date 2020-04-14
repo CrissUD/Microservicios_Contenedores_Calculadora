@@ -1,0 +1,29 @@
+version: '2'
+services:
+  suma:
+    build: ./suma
+    ports:
+      - "3030:3030"
+  resta:
+    build: ./resta
+    ports:
+      - "4040:4040"
+  multiplicacion:
+    build: ./multiplicacion
+    ports:
+      - "5050:5050"
+  division:
+    build: ./division
+    ports:
+      - "6060:6060"
+  interfaz:
+    build: ./interfaz
+    links:
+      - suma
+      - resta
+      - multiplicacion
+      - division
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./interfaz:/usr/src/app
